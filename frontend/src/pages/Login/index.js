@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
-import rocket from "../../assets/rocket2tsp.png";
+import rocket from "../../assets/rocket3.png";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (

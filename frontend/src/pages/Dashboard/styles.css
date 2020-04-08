@@ -1,0 +1,132 @@
+.dash-container {
+  width: 100%;
+  max-width: 1250px;
+  height: 100vh;
+  margin: 0 auto;
+
+  background: #fff;
+  border-radius: 8px;
+}
+
+.dash-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash-container .content h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  margin-top: 15 px;
+}
+
+.dash-container .content section {
+  border: 0;
+  /* border-radius: 8px; */
+  padding: 10px 24px;
+  width: 500px;
+  margin-top: 15px;
+}
+
+.dash-container .content h4 {
+  font-size: 12px;
+  color: darkgrey;
+  margin-bottom: -19px;
+  text-align: start;
+  width: 35%;
+}
+
+.dash-container .content section ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.dash-container .content section ul li {
+  /* margin: 10px 10px;
+  background: rgba(219, 216, 216, 0.973);
+  padding: 10px 24px; */
+}
+
+.dash-container .content section ul li {
+  margin: 5px 10px;
+}
+
+.dash-container .content section ul li .card .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+toggleWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.toggleWrapper input {
+  position: absolute;
+  left: -99em;
+}
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 30px;
+  background: #d21626;
+  border-radius: 5px;
+  -webkit-transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.toggle:before,
+.toggle:after {
+  position: absolute;
+  line-height: 30px;
+  font-size: 12px;
+  z-index: 2;
+  -webkit-transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.toggle:before {
+  content: "OFF";
+  left: 20px;
+  color: #d21626;
+}
+.toggle:after {
+  content: "ON";
+  right: 20px;
+  color: #fff;
+}
+.toggle__handler {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  width: 65px;
+  height: 24px;
+  border-radius: 3px;
+  top: 3px;
+  left: 3px;
+  -webkit-transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+input:checked + .toggle {
+  background: #66b317;
+}
+input:checked + .toggle:before {
+  color: #fff;
+}
+input:checked + .toggle:after {
+  color: #66b317;
+}
+input:checked + .toggle .toggle__handler {
+  width: 54px;
+  -webkit-transform: translateX(60px);
+  transform: translateX(60px);
+  border-color: #fff;
+}
