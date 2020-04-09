@@ -9,7 +9,7 @@
 
 body {
   font: 400 14px Roboto, sans-serif;
-  background: #f0f0f5;
+  background: #ffff;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -50,4 +50,15 @@ form input {
 
 .button:hover {
   filter: brightness(90%);
+}
+
+.login-container a {
+  color: #fff;
+  transition: filter 0.2s;
+}
+
+a:hover {
+  filter: brightness(90%);
+  color: #fff;
+  text-decoration: none;
 }

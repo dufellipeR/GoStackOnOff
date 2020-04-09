@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.css";
+import SwitchOO from "../../components/SwitchOO";
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   function teste(e) {
@@ -10,7 +12,7 @@ export default function Dashboard() {
       <div className="dash-container">
         <div className="headers">
           <header>
-            <h3>Meu Perfil</h3>
+            <Link to="/detail">Meu Perfil</Link>
           </header>
         </div>
         <div className="content">
@@ -22,20 +24,7 @@ export default function Dashboard() {
                 <div className="card">
                   <div className="card-body">
                     <span> Eduardo</span>
-                    <div className="toggleWrapper">
-                      <input
-                        type="checkbox"
-                        id="dn"
-                        className="dn"
-                        onChange={($event) => {
-                          $event.persist();
-                          teste($event.nativeEvent.y);
-                        }}
-                      />
-                      <label htmlFor="dn" className="toggle">
-                        <span className="toggle__handler"></span>
-                      </label>
-                    </div>
+                    <SwitchOO />
                   </div>
                 </div>
               </li>

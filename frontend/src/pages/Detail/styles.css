@@ -1,4 +1,4 @@
-.login-container {
+.detail-container {
   width: 1000%;
   max-width: 1120px;
   height: 100vh;
@@ -21,4 +21,12 @@
 .login-container section.form form h1 {
   font-size: 32px;
   margin-bottom: 32px;
+}
+
+#info {
+  border: 1px solid #333;
+  min-width: 400px;
+  width: 400px;
+  min-height: 500px;
+  height: 400px;
 }
